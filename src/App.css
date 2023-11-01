@@ -1,6 +1,5 @@
 #root {
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -10,9 +9,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -21,6 +22,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -38,4 +40,55 @@
 
 .read-the-docs {
   color: #888;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  color: rgb(255, 217, 0);
+  background-color: blue;
+  width: fit-content;
+  margin-inline: auto;
+  border-radius: 1rem;
+  padding: .5rem;
+  border: 2px solid gold;
+}
+
+h2,
+h3 {
+  color: rgb(255, 217, 0);
+  background-color: rgba(0, 0, 255, 0.645);
+  width: fit-content;
+  margin-inline: auto;
+  border-radius: 1rem;
+  padding: .5rem;
+  border: 1px solid gold;
+}
+
+.btnMostrar {
+  position: fixed;
+  left: 3vw;
+  top: 3vh;
+  width: 3vw;
+  height: fit-content;
+  padding: 0rem;
+  background: transparent;
+}
+
+.btnMostrar:hover, .btnMostrar:focus {
+  border: unset;
+  outline: none;
+  transition: 0;
+}
+
+.btnMostrar img {
+  width: 100%;
+  border: 1px solid gold;
+  border-radius: 1rem;
 }

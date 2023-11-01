@@ -30,6 +30,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow-y: auto;
 
   background: url(./assets/4a85175408b5516374e0280724abcf361cf0126d.jpg);
   background-size: cover;
@@ -75,10 +76,11 @@ button:focus-visible {
 .container {
   gap: 2rem;
   background: rgba(255, 255, 255, 0.5);
-  padding: 2rem;
+  padding: 0;
   border: 2px solid black;
   border-radius: 2rem;
   width: 90vw;
+  overflow-y: auto;
 }
 
 table {

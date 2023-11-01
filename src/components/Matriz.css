@@ -1,5 +1,6 @@
 table .mejorOpcion {
-    color: rgb(0, 255, 0);
-    background-color: green;
+    color: gold;
+    background-color: blue;
     font-weight: 900;
+    outline: 1px solid gold;
 }

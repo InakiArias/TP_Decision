@@ -31,10 +31,10 @@ export default function Matriz({ alternativas, futuros, coeficiente, matriz, set
     const laplaces = [];
 
     for (let i = 0; i < alternativas; i++) {
-        const optimista = Math.max(...matriz[i].slice(0, alternativas));
+        const optimista = Math.max(...matriz[i].slice(0, futuros));
         optimistas.push(optimista);
 
-        const pesimista = Math.min(...matriz[i].slice(0, alternativas));
+        const pesimista = Math.min(...matriz[i].slice(0, futuros));
         pesimistas.push(pesimista);
 
         hurwiczes.push(optimista * coeficiente + pesimista * (1 - coeficiente));
@@ -58,7 +58,7 @@ export default function Matriz({ alternativas, futuros, coeficiente, matriz, set
 
         for (let j = 0; j < futuros; j++) {
             futurosList2.push(
-                <td key={i + " " + j}><input type="number" defaultValue={0} onChange={(event) => cambiarValorMatriz(i, j, event)} /></td>
+                <td key={i + " " + j}><input type="number" value={matriz[i][j]} onChange={(event) => cambiarValorMatriz(i, j, event)} /></td>
             )
         }
 
